@@ -116,7 +116,7 @@ internal class InstanceHandlers
 	{
 		if (_handlers.ContainsKey(notificationType))
 		{
-			_handlers.SetItem(
+			_handlers = _handlers.SetItem(
 				notificationType,
 				_handlers[notificationType].Remove(handler));
 		}

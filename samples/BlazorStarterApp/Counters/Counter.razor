@@ -1,0 +1,28 @@
+﻿@page "/counter"
+@using DispatchR;
+@inherits DispatcherComponent
+@implements INotificationHandler<Count.Result>
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p>Current Count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+
+@code {
+	[Inject]
+	IDispatcher Dispatcher { get; set; } = default!;
+
+	private int currentCount = 0;
+
+	private void IncrementCount()
+	{
+		Dispatcher.Dispatch(new Count.Request());
+	}
+
+	public void Handle(Count.Result result)
+		=> currentCount = result.Currentcount;
+}

@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DispatchR", "src\DispatchR\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DispatchR.Tests", "test\DispatchR.Tests\DispatchR.Tests.csproj", "{8583A854-2178-46EC-9FE2-52423D7592CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorStarterApp", "samples\BlazorStarterApp\BlazorStarterApp.csproj", "{8C8C6A94-48C5-4B7A-A5ED-13CA4D75B62E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorStarterApp", "samples\BlazorStarterApp\BlazorStarterApp.csproj", "{8C8C6A94-48C5-4B7A-A5ED-13CA4D75B62E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{013DCBA7-AAD0-4E5B-9DA5-D92FF8A4433F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

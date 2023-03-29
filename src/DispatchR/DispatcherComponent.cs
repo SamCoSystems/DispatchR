@@ -22,7 +22,7 @@ public abstract class DispatcherComponent : ComponentBase, IDisposable
 	{
 		if (_isHandler)
 		{
-			Dispatcher.Register(this);
+			Dispatcher.Advanced.Register(this);
 		}
 		OnInitializedAndRegistered();
 	}
@@ -39,7 +39,7 @@ public abstract class DispatcherComponent : ComponentBase, IDisposable
 		GC.SuppressFinalize(this);
 		if (_isHandler)
 		{
-			Dispatcher.Unregister(this);
+			Dispatcher.Advanced.Unregister(this);
 		}
 
 	}
